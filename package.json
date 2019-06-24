@@ -1,0 +1,16 @@
+{
+  "name": "FirstSample",
+  "version": "0.0.0",
+  "description": "Testing Startup",
+  "main": "app.js",
+  "scripts": {
+    "js_common": "uglifyjs js/common.js --compress --mangle --output jsUglify/commonComp.js",
+    "js_home": "uglifyjs js/homepageNotesUpdate.js --compress --mangle --output jsUglify/homepageNotesUpdateComp.js"
+  },
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "*"
+  },
+  "author": "Maheshwran G",
+  "license": "ISC"
+}

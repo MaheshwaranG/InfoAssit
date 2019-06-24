@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>How to modify values in a JSON object using the bracket notation.</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+
+
+<script>
+var myObj, i, x = "";
+myObj = {
+  "name":"John",
+  "age":30,
+  "cars": {
+    "car1":"Ford",
+    "car2":"BMW",
+    "car3":"Fiat"
+  }
+}
+myObj.cars["car2"] = "Mercedes";
+myObj.cars["car4"] = "dfb";
+delete myObj.cars["car2"];
+for (i in myObj.cars) {
+    x += myObj.cars[i] + "<br>";
+}
+
+function guid() {
+  function s4() {
+    return Math.floor((1 + Math.random()) * 0x10000)
+      .toString(16)
+      .substring(1);
+  }
+  return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+}
+
+function uuidv4old() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+    return v.toString(16);
+  });
+}
+function uuidv4() {
+  return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+    (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+  )
+}
+
+console.log(uuidv4());
+document.getElementById("demo").innerHTML = x;
+document.getElementById("demo1").innerHTML = uuidv4();
+document.getElementById("demo2").innerHTML = uuidv4old();
+document.getElementById("demo3").innerHTML = guid();
+
+</script>
+
+</body>
+</html>

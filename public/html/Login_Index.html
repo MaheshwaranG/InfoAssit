@@ -1,0 +1,41 @@
+<!Doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login Page </title>
+	<link href="./css/log-page.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<div class="card">
+<div>
+<br/>
+<br/>
+</div>
+ <div class="img-close">
+  <img src="./images/usertemplate.png" alt="Avatar">
+   <!--<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span> -->
+  </div>
+  <form action="/verify" method="post" autocomplete="on" >
+  <div class="container">
+  <div class="login-input">
+    <label for="username"> Username</label>
+    </br>
+    <input type="text" name="username" class="loginUsernameInput" size="25" maxlength="25" placeholder="User name" pattern="[\S]*" title="Space char Not Accepted" autofocus required />
+    </div>
+    <br/>
+    <div class="login-input">
+    <label for="password"> Password</label>
+    </br>
+    <input type="password" name="Password" class="loginUsernameInput" size="16" maxlength="16" placeholder="Password" autocomplete="off" required />
+    </div>
+    <br/>
+    <br/>
+
+    <div class="login-button">
+    <button type="submit" class="login">LogIn</button>
+    </div>
+  </div>
+</form>
+</div>
+</body>
+</html>

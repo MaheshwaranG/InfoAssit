@@ -1,0 +1,228 @@
+
+<table>
+  <tr>
+    <th colspan="2">Name</th>
+    <th colspan="2">  <input type="text" name="name" id="name" size="25" maxlength="25" class='table-input-style' required>  </th>
+  </tr>
+  <tr>
+    <th colspan="2">CH_Member</th>
+    <th colspan="2"><input type="text" name="chMember" id="ch-member" size="25" maxlength="25" class='table-input-style' required></th>
+  </tr>
+  <tr>
+    <th colspan="2">Story_Id</th>
+    <th colspan="2"><input type="text" name="storyId" id="story-id" size="25" maxlength="25" pattern="[0-9]*" class='table-input-style'  required></th>
+  </tr>
+  <tr>
+    <th colspan="2">CH Start Date</th>
+    <th colspan="2"><input type="date" name="chStartDate" id="ch-start-date" size="25" maxlength="25" class='table-input-style' required></th>
+  </tr>
+  <tr>
+    <th colspan="2">CH End Date</th>
+    <th colspan="2"><input type="date" name="chEndDate" id="ch-end-date" size="25" maxlength="25" class='table-input-style' required></th>
+  </tr>
+  <tr>
+    <th>Steps</th>
+    <th>Process</th>
+    <th class='mg-table-small-th'>From</th>
+    <th class='mg-table-small-th'>To</th>
+    <th class='mg-table-large-th'>Comments</th>
+  </tr>
+  <tr>
+    <td rowspan="2">Step 1</td>
+    <td>ScreenAnalysis+
+    Checklist_Execution
+    +Clover</td>
+    <td><input type="date" name="analysisStartDate" id="analysis-start-date" class='table-input-style'></td>
+    <td><input type="date" name="analysisEndDate" id="analysis-end-date" class='table-input-style' ></td>
+    <td><input type="text" name="analysisMemComments" id="analysis-mem-comments" size="50" maxlength="50" class='table-input-style' ></td>
+  </tr>
+   <tr>
+    <td>CH LL Review</td>
+    <td> <input type="date" name="analysisLLRStartDate" id="analysis-llr-start-date" class='table-input-style'> </td>
+    <td><input type="date" name="analysisLLREndDate" id="analysis-llr-end-date" class='table-input-style' ></td>
+    <td><input type="text" name="analysisLLRComments" id="analysis-llr-comments" size="50" maxlength="50" class='table-input-style' ></td>
+  </tr>
+  <tr>
+    <td rowspan="2">Step 2</td>
+    <td>Given to QC</td>
+    <td > <input type="date" name="analysisQCStartDate" id="analysis-qc-start-date" class='table-input-style' > </td>
+    <td><input type="date" name="analysisQCEndDate" id="analysis-qc-end-date" class='table-input-style' ></td>
+    <td><input type="text" name="analysisQCComments" id="analysis-qc-commnets" size="50" maxlength="50" class='table-input-style' ></td>
+  </tr>
+  <tr></tr>
+   <tr>
+    <td rowspan="2">Step 3</td>
+    <td>Impact_Analysis
+    Dev posted + CH posted</td>
+    <td><input type="date" name="postChStartDate" id="post-ch-start-date" class='table-input-style'></td>
+    <td><input type="date" name="postChEndDate" id="post-ch-end-date" class='table-input-style'></td>
+    <td><input type="text" name="postChComments" id="post-ch-commnets" size="50" maxlength="50" class='table-input-style'></td>
+  </tr>
+   <tr>
+    <td>CH LL Review</td>
+    <td ><input type="date" name="postChLLRStartDate" id="post-ch-llr-start-date" class='table-input-style' >  </td>
+    <td><input type="date" name="postChLLREndDate" id="post-ch-llr-end-date" class='table-input-style'></td>
+    <td><input type="text" name="postChLLRComments" id="post-ch-llr-commnets" size="50" maxlength="50" class='table-input-style' ></td>
+  </tr>
+  <tr>
+    <td rowspan="2">Step 4</td>
+    <td>Retesting &
+  Regression</td>
+    <td><input type="date" name="RRTEtartDate" id="rrt-start-date" class='table-input-style'></td>
+    <td><input type="date" name="RRTEndDate" id="rrt-end-date" class='table-input-style'></td>
+    <td><input type="text" name="RRTComments" id="rrt-commnets" size="50" maxlength="50" class='table-input-style'></td>
+  </tr>
+  <tr>
+    <td>CH LL Review</td>
+    <td> <input type="date" name="RRTLLReview" id="rrt-ll-review" class='table-input-style' >  </td>
+    <td><input type="date" name="RRTLLEndDate" id="rrt-ll-end-date" class='table-input-style' ></td>
+    <td><input type="text" name="RRTLLComments" id="rrt-ll-commnets" size="50" maxlength="50" class='table-input-style'></td>
+  </tr>
+  <tr>
+    <td>Step 5</td>
+    <td>Trunk completion</td>
+    <td>  <input type="date" name="finalChStartDate" id="final-ch-start-date" class='table-input-style'>  </td>
+    <td><input type="date" name="finalChEndDate" id="final-ch-end-date" class='table-input-style'></td>
+    <td><input type="text" name="finalChComments" id="final-ch-commnets" size="50" maxlength="50" class='table-input-style'></td>
+  </tr>
+  <tr>
+    <td>Step 6</td>
+    <td>Given to QC</td>
+    <td ><input type="date" name="finalQCStartDate" id="final-qc-start-date" class='table-input-style' >   </td>
+    <td><input type="date" name="finalQCEndDate" id="final-qc-end-date" class='table-input-style'></td>
+    <td><input type="text" name="finalQCComments" id="final-qc-commnets" size="50" maxlength="50" class='table-input-style' ></td>
+  </tr>
+ 
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table>
+  <tr>
+    <th colspan="2">Name</th>
+    <th colspan="2">  <input type="text" name="name" id="name" size="25" maxlength="25" required>  </th>
+  </tr>
+  <tr>
+    <th colspan="2">CH_Member</th>
+    <th colspan="2"><input type="text" name="chMember" id="ch-member" size="25" maxlength="25" required></th>
+  </tr>
+  <tr>
+    <th colspan="2">Story_Id</th>
+    <th colspan="2"><input type="text" name="storyId" id="story-id" size="25" maxlength="25" pattern="[0-9]*" required></th>
+  </tr>
+  <tr>
+    <th colspan="2">CH Start Date</th>
+    <th colspan="2"><input type="date" name="chStartDate" id="ch-start-date" size="25" maxlength="25" required></th>
+  </tr>
+  <tr>
+    <th colspan="2">CH End Date</th>
+    <th colspan="2"><input type="date" name="chEndDate" id="ch-end-date" size="25" maxlength="25" required></th>
+  </tr>
+  <tr>
+    <th>Steps</th>
+    <th>Process</th>
+    <th>From</th>
+    <th>To</th>
+  </tr>
+  <tr>
+    <td rowspan="2">Step 1</td>
+    <td>ScreenAnalysis+
+    Checklist_Execution
+    +Clover</td>
+    <td><input type="date" name="analysisStartDate" id="analysis-start-date"></td>
+    <td><input type="date" name="analysisEndDate" id="analysis-end-date" ></td>
+    <td><input type="text" name="analysisMemComments" id="analysis-mem-comments" size="50" maxlength="50" ></td>
+  </tr>
+   <tr>
+    <td>CH LL Review</td>
+    <td> <input type="date" name="analysisLLRStartDate" id="analysis-llr-start-date" > </td>
+    <td><input type="date" name="analysisLLREndDate" id="analysis-llr-end-date"  ></td>
+    <td><input type="text" name="analysisLLRComments" id="analysis-llr-comments" size="50" maxlength="50" ></td>
+  </tr>
+  <tr>
+    <td rowspan="2">Step 2</td>
+    <td>Given to QC</td>
+    <td > <input type="date" name="analysisQCStartDate" id="analysis-qc-start-date"  > </td>
+    <td><input type="date" name="analysisQCEndDate" id="analysis-qc-end-date" ></td>
+    <td><input type="text" name="analysisQCComments" id="analysis-qc-commnets" size="50" maxlength="50" ></td>
+  </tr>
+  <tr></tr>
+   <tr>
+    <td rowspan="2">Step 3</td>
+    <td>Impact_Analysis
+    Dev posted + CH posted</td>
+    <td><input type="date" name="postChStartDate" id="post-ch-start-date" ></td>
+    <td><input type="date" name="postChEndDate" id="post-ch-end-date"></td>
+    <td><input type="text" name="postChComments" id="post-ch-commnets" size="50" maxlength="50" ></td>
+  </tr>
+   <tr>
+    <td>CH LL Review</td>
+    <td ><input type="date" name="postChLLRStartDate" id="post-ch-llr-start-date" >  </td>
+    <td><input type="date" name="postChLLREndDate" id="post-ch-llr-end-date"></td>
+    <td><input type="text" name="postChLLRComments" id="post-ch-llr-commnets" size="50" maxlength="50" ></td>
+  </tr>
+  <tr>
+    <td rowspan="2">Step 4</td>
+    <td>Retesting &
+  Regression</td>
+    <td><input type="date" name="RRTEtartDate" id="rrt-start-date"></td>
+    <td><input type="date" name="RRTEndDate" id="rrt-end-date"></td>
+    <td><input type="text" name="RRTComments" id="rrt-commnets" size="50" maxlength="50" ></td>
+  </tr>
+  <tr>
+    <td>CH LL Review</td>
+    <td> <input type="date" name="RRTLLReview" id="rrt-ll-review" >  </td>
+    <td><input type="date" name="RRTLLEndDate" id="rrt-ll-end-date"  ></td>
+    <td><input type="text" name="RRTLLComments" id="rrt-ll-commnets" size="50" maxlength="50" ></td>
+  </tr>
+  <tr>
+    <td>Step 5</td>
+    <td>Trunk completion</td>
+    <td>  <input type="date" name="finalChStartDate" id="final-ch-start-date" >  </td>
+    <td><input type="date" name="finalChEndDate" id="final-ch-end-date"></td>
+    <td><input type="text" name="finalChComments" id="final-ch-commnets" size="50" maxlength="50" ></td>
+  </tr>
+  <tr>
+    <td>Step 6</td>
+    <td>Given to QC</td>
+    <td ><input type="date" name="finalQCStartDate" id="final-qc-start-date"  >   </td>
+    <td><input type="date" name="finalQCEndDate" id="final-qc-end-date" ></td>
+    <td><input type="text" name="finalQCComments" id="final-qc-commnets" size="50" maxlength="50" ></td>
+  </tr>
+ 
+</table>
+
+
+
+
